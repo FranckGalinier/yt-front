@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Welcome!{% endblock %}
+
+{% block body %}
+    <h1>Welcome to the YouTube Downloader!</h1>
+    <p>Enter the URL of the YouTube video you want to download below:</p>
+    
+    {{ form_start(form) }}
+        {{ form_row(form.url) }}
+        <button type="submit">Download</button>
+    {{ form_end(form) }}
+{% endblock %}
